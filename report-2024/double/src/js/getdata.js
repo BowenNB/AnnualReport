@@ -39,6 +39,30 @@ export const Calendardata = ref({
     min_day_count: 0
 });
 
+
+export const CardData = ref({
+    myavatarSrc: './header/header1.webp',
+    hisavatarSrc: './header/header2.webp',
+    mynickname: '文轩',
+    hisnickname: '嗷呜嗷呜',
+    summaryText: '真挚浪漫的熬夜冠军',
+    firstChatDate: '2022-09-29',
+    mostChatYear: '2024',
+    mostChatMonth: '04',
+    mostChatCount: 2740,
+    leftTags: [
+        { label: '聊天天数', value: 206, unit: '天' },
+        { label: '发送消息', value: 4631, unit: '条' },
+        { label: '收到消息', value: 6484, unit: '条' },
+        { label: '总字数', value: 89908, unit: '字' }
+    ],
+    rightTags: [
+        { label: '年度关键词', value: '哈哈哈' },
+        { label: '活跃时段', value: '22:00-02:00' },
+        { label: '常用表情包', image: 'http://wxapp.tc.qq.com/262/20304/stodownload?m=f28552da0bf0897da053828966f799d3&filekey=30350201010403232303433303137323233373030303932393231343539666562626563343332383830393030303030313036&bizid=1023\n' }
+    ]
+})
+
 export const chatData = ref({
     mynickname: "文轩",
     hisnickname: "嗷呜嗷呜",
