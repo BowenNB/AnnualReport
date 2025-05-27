@@ -3,60 +3,12 @@ import * as echarts from 'echarts';
 
 export var key = '';
 
-export const myavatar = ref('./header/header13.webp');
-export const hisavatar = ref('./header/header45.webp');
-export const mynickname = ref('浅梦');
-export const hisnickname = ref('故人依旧');
-
-export const CardData = ref({
-    myavatarSrc: './header/header13.webp',
-    hisavatarSrc: './header/header45.webp',
-    mynickname: '浅梦',
-    hisnickname: '故人依旧',
-    summaryText: '真挚浪漫的熬夜冠军',
-    firstChatDate: '2020-07-11',
-    mostChatYear: '2024',
-    mostChatMonth: '04',
-    mostChatCount: 2740,
-    leftTags: [
-        {
-            "label": "聊天天数",
-            "value": 206,
-            "unit": "天"
-        },
-        {
-            "label": "发送消息",
-            "value": 4631,
-            "unit": "条"
-        },
-        {
-            "label": "收到消息",
-            "value": 6484,
-            "unit": "条"
-        },
-        {
-            "label": "总字数",
-            "value": 89908,
-            "unit": "字"
-        }],
-    rightTags: [
-        {
-            "label": "年度关键词",
-            "value": "哈哈哈"
-        },
-        {
-            "label": "活跃时段",
-            "value": "22:00-02:00"
-        },
-        {
-            "label": "常用表情包",
-            "image": "./header/header44.webp"
-        }
-    ],
-});
-
-export const daysSinceFirstChat = ref(1345);
-export const cardName = ref('2024年度报告');
+export const myavatar = ref('./header/header1.webp');
+export const hisavatar = ref('./header/header2.webp');
+export const mynickname = ref('文轩');
+export const hisnickname = ref('嗷呜嗷呜');
+export const daysSinceFirstChat = ref(970);
+export const cardName = ref('微信聊天报告');
 
 
 function getVirtualData(year) {
@@ -74,33 +26,47 @@ function getVirtualData(year) {
 }
 
 export const Calendardata = ref({
-    daysChatted: 206,
-    mostActiveYear: "2024",
-    mostActiveMonth: "04",
-    averageChats: 91,
-    peakChatYear: "2024",
+    daysChatted: 175,
+    mostActiveYear: "2025",
+    mostActiveMonth: "03",
+    averageChats: 160,
+    peakChatYear: "2025",
     peakChatMonth: "05",
-    peakChatDay: "18",
-    peakChats: 265,
-    data: getVirtualData('2024'),
-    max_day_count: 10000,
+    peakChatDay: "11",
+    peakChats: 711,
+    data: getVirtualData('2025'),
+    max_day_count: 6411,
     min_day_count: 0
 });
 
 export const chatData = ref({
-    mynickname: "浅梦",
-    hisnickname: "故人依旧",
-    totalmessages:15976,
-    totalwords: 89908,
-    totalvoice: 320,
-    totalimages: 1769,
-    totalemojis: 25,
-    emoji: "./header/header44.webp",
-    send_msg_num:12306,
-    receive_msg_num:18309,
+    mynickname: "文轩",
+    hisnickname: "嗷呜嗷呜",
+    totalmessages: 27923,
+    totalwords: 158624,
+    totalvoice: 98,
+    totalimages: 971,
+    totalemojis: 3114,
+    emoji: "http://wxapp.tc.qq.com/262/20304/stodownload?m=f28552da0bf0897da053828966f799d3&filekey=30350201010403232303433303137323233373030303932393231343539666562626563343332383830393030303030313036&bizid=1023",
+    send_msg_num: 14776,
+    receive_msg_num: 13147,
     total_message_size:2345, // 聊天数据大小，单位：MB
-    my_type_count:[['文本',10000],['图片',2000],['视频',500],['表情包',5000],['视频',100],['文件',50]],
-    ta_type_count:[['文本',5000],['图片',1000],['视频',100],['表情包',2000],['视频',50],['文件',80]],
+    my_type_count: [
+        ['文本', 11579],
+        ['图片', 634],
+        ['语音', 92],
+        ['视频', 28],
+        ['表情包', 740],
+        ['文件', 9]
+    ],
+    ta_type_count: [
+        ['文本', 9354],
+        ['图片', 337],
+        ['语音', 6],
+        ['视频', 9],
+        ['表情包', 2374],
+        ['文件', 0]
+    ],
 });
 
 export const quarterData = ref([
@@ -129,69 +95,51 @@ export const quarterData = ref([
 export const FirstData_isReady = ref(true);
 export const firstChatData = ref({
     "firstChatDate": {
-        "year": "2020",
-        "month": "07",
-        "day": "11"
+        "year": "2022",
+        "month": "09",
+        "day": "29"
     },
-    "initiator": "浅梦",
+    "initiator": "嗷呜嗷呜",
     "conversation": [
         {
             "side": "right",
-            "avatarSrc": "/header/header13.webp",
-            "content": "刚寄出去，要十多天才会到"
+            "avatarSrc": "/header/header1.webp",
+            "content": "学长好，打扰了。请问会计学院的导师有推荐么"
         },
         {
             "side": "left",
-            "avatarSrc": "/header/header45.webp",
-            "content": "希望我还能坚持到那时候"
+            "avatarSrc": "/header/header2.webp",
+            "content": "会计学院不在沙河校区"
         },
         {
             "side": "right",
-            "avatarSrc": "/header/header13.webp",
-            "content": "明年有空再拿也行"
+            "avatarSrc": "/header/header1.webp",
+            "content": "哦哦好的！谢谢学长！"
         }
     ]
 })
 
 export const keyWordsData = ref({
-    "mykeyWord": {
-        "keyWord": "哈哈哈",
-        "keyWordCount": 82
+    mykeyWord: {
+        keyWord: '宝宝',
+        keyWordCount: 63
     },
-    "takeyWord": {
-        "keyWord": "哈哈",
-        "keyWordCount": 111
+    takeyWord: {
+        keyWord: '哈哈哈',
+        keyWordCount: 96
     },
-    "messages": [
-        {
-            "side": "right",
-            "content": "你怎么样哈哈哈",
-        },
-        {
-            "side": "left",
-            "content": "哈哈没事",
-        },
-        {
-            "side": "right",
-            "content": "哈哈哈很好玩的",
-        },
-        {
-            "side": "left",
-            "content": "确实挺不错哈哈哈",
-        },
-        {
-            "side": "right",
-            "content": "这个一模一样哈哈哈哈",
-        },
-        {
-            "side": "left",
-            "content": "是的哈哈",
-        }
+    messages: [
+        { side: 'right', content: '超喜欢性格好的宝宝' },
+        { side: 'right', content: '啊哈哈哈哈哈哈太可爱了宝宝' },
+        { side: 'right', content: '去宝宝家' },
+        { side: 'left',  content: '哈哈哈哈哈' },
+        { side: 'left',  content: '哇哈哈哈' },
+        { side: 'left',  content: '哈哈哈哈哈哈哈哈哈哈哈哈' }
     ]
 });
 
 export const mykeyWord = ref({
-    "keyWord": "哈哈哈",
+    "keyWord": "宝宝",
     "keyWordCount": 82
 });
 
@@ -207,10 +155,10 @@ export const currentIndex = ref(0);
 export const Welcome_data = {
     descriptionText: {
         hello: "Hello World!",
-        text1: "时光荏苒，转眼间我们又走过了一年。",
-        text2: "在过去的365天里，从深夜的长谈到清晨的祝福，从好友间的调侃到工作中的忙碌……",
-        text4: "这些聊天记录，是属于你的独家记忆。",
-        text7: "打开报告，开启你的专属年度记忆吧！"
+        text1: "时光荏苒，转眼间我们陪伴了彼此很长的时间。",
+        text2: "在过去的时间里，从深夜的长谈到清晨的祝福，从好友间的调侃到亲密关系中的关心……",
+        text4: "这些聊天记录，是属于我们的独家记忆。",
+        text7: "打开报告，开启我们的专属年度记忆吧！"
     }
 }
 
@@ -223,54 +171,33 @@ export const allText = ref([
 ])
 
 export const chatdescription = ref({
-    "timedes": "深夜的",
-    "summary": "你们最爱在深夜聊天",
-    "timePeriod": "22:00-02:00",
-    "quote": [
+    timedes: "晚上的",
+    summary: "你们最爱在傍晚到午夜聊天",
+    timePeriod: "20:00-00:00",
+    quote: [
         "每一次热烈的对话",
         "都是灵魂的一次旅行"
     ],
-    "data": [
-        668,
-        412,
-        7,
-        0,
-        0,
-        4,
-        0,
-        63,
-        14,
-        195,
-        576,
-        564,
-        627,
-        554,
-        561,
-        589,
-        736,
-        539,
-        743,
-        754,
-        656,
-        791,
-        1187,
-        875
+    data: [
+        102, 58, 12, 5, 3, 9, 17, 34, 79, 182, 315, 492,
+        588, 543, 612, 701, 824, 756, 923, 1098, 1175, 842,
+        409, 251
     ],
-    "remarks": [
+    remarks: [
         "你们聊到很晚",
         "那天一定有你们难忘的回忆吧"
     ],
-    "favoriteChatDate": {
-        "is_exist": 1,
-        "year": "2024",
-        "month": "08",
-        "day": "27"
+    favoriteChatDate: {
+        is_exist: 1,
+        year: "2025",
+        month: "05",
+        day: "11"
     }
 });
 
 export const summaryText = ref('真挚浪漫的熬夜冠军');
 
-export const wxid = 'wxid_1234567890';
+export const wxid = 'wxid_mp0urvulan8e22';
 
 // 头像链接
 export const reportName = '2024微信聊天报告';
@@ -279,6 +206,6 @@ export const websiteUrl = 'https://memotrace.cn';
 // 网站链接文本显示内容
 export const websiteUrlText = 'memotrace.cn';
 // 底部文本
-export const bottomText = '扫一扫制作专属你的微信聊天报告';
+export const bottomText = '我爱你宝宝';
 
 export const UPLOAD_URL = ''

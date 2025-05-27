@@ -22,7 +22,7 @@ export default defineConfig({
   base: '/2024Report/',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.  url))
     },
   }
 })
