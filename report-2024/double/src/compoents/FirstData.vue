@@ -84,7 +84,7 @@ onMounted(() => {
     stages.value.push(
         { text: `${firstChatData.value.firstChatDate.year}年${firstChatData.value.firstChatDate.month}月${firstChatData.value.firstChatDate.day}日` },
         { text: `距今已有${daysSinceFirstChat.value}天` },
-        { text: '2024年的第一段对话' },
+        { text: '2022年的第一段对话' },
         { text: `是由${firstChatData.value.initiator}发起的` }
     );
     transitionText.value = stages.value[currentStage.value].text;

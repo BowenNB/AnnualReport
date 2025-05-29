@@ -59,7 +59,7 @@ export const CardData = ref({
     rightTags: [
         { label: '年度关键词', value: '哈哈哈' },
         { label: '活跃时段', value: '22:00-02:00' },
-        { label: '常用表情包', image: 'http://wxapp.tc.qq.com/262/20304/stodownload?m=f28552da0bf0897da053828966f799d3&filekey=30350201010403232303433303137323233373030303932393231343539666562626563343332383830393030303030313036&bizid=1023\n' }
+        { label: '常用表情包', image: './header/header3.webp' }
     ]
 })
 
@@ -71,7 +71,7 @@ export const chatData = ref({
     totalvoice: 98,
     totalimages: 971,
     totalemojis: 3114,
-    emoji: "http://wxapp.tc.qq.com/262/20304/stodownload?m=f28552da0bf0897da053828966f799d3&filekey=30350201010403232303433303137323233373030303932393231343539666562626563343332383830393030303030313036&bizid=1023",
+    emoji: "./header/header3.webp",
     send_msg_num: 14776,
     receive_msg_num: 13147,
     total_message_size:2345, // 聊天数据大小，单位：MB
